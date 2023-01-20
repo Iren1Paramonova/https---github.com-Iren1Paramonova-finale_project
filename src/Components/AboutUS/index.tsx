@@ -3,7 +3,7 @@ import style from './AboutUs.module.scss';
 import { routes } from 'Helpers/Constants/routes';
 import { Link } from 'react-router-dom';
 
-export const AboutUs = () => {
+export const AboutText = () => {
   return (
     <main className={style.wrapper}>
       <h1>Вас приветствует сайт любителей кошек!</h1>

@@ -16,7 +16,13 @@ export const Header = () => {
             <Link to={routes.posts}>ПОСТЫ</Link>
           </li>
           <li>
-            <Link to={'/about'}>О НАС</Link>
+            <Link to={routes.gallery}>ГАЛЕРЕЯ</Link>
+          </li>
+          <li>
+            <Link to={routes.video}>ВИДЕО</Link>
+          </li>
+          <li>
+            <Link to={routes.aboutUs}>О НАС</Link>
           </li>
         </ul>
       }
