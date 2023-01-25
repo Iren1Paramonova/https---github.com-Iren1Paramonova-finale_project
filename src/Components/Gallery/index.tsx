@@ -17,7 +17,7 @@ export const GalleryList = ({ data }: TProps) => {
       ) : (
         data.map((cat) => <img src={cat.url} alt="myu" key={cat.id} />)
       )}
-      <Link to={routes.gallery}>go to gallery</Link>
+      <Link to={routes.main}>go to main</Link>
     </main>
   );
 };

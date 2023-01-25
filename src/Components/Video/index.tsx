@@ -8,7 +8,7 @@ export const VideoContent = () => {
     <main className={style.wrapper}>
       <h1>Вас приветствует сайт любителей кошек!</h1>
       <p></p>
-      <Link to={routes.video}>go to videoContent</Link>
+      <Link to={routes.main}>go to main</Link>
     </main>
   );
 };
