@@ -4,18 +4,28 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: beige;
+  background-color: rgb(50, 30, 161);
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
 
   &_logo {
-    color: red;
     font-size: 20px;
+    height: 56px;
   }
 
   &_title {
     color: chocolate;
   }
-  & > ul {
-    display: flex;
-    gap: 18px;
+
+  &_nav {
+    & > ul {
+      color: aqua;
+      list-style: none;
+      display: flex;
+      gap: 18px;
+    }
   }
 }

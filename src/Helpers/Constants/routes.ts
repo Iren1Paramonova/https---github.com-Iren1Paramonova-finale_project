@@ -10,5 +10,6 @@ export const routes = {
   post4: '/posts/post4',
   post5: '/posts/post5',
   post6: '/posts/post6',
+  auth: '/auth',
   notFound: '*',
 };

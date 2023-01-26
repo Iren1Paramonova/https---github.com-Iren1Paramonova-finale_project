@@ -8,7 +8,7 @@ export const Gallery = () => {
   const [data, setData] = useState<TCat[] | []>([]);
   const getCats = async () => {
     const randomCatUrl = 'https://api.thecatapi.com/v1/images/search';
-    const tenCatsUrl = 'https://api.thecatapi.com/v1/images/search?limit=10';
+    // const tenCatsUrl = 'https://api.thecatapi.com/v1/images/search?limit=10';
     const response = await axios.get(randomCatUrl);
     setData(response.data);
   };

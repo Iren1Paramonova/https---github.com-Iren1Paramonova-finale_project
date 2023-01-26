@@ -6,12 +6,12 @@ import style from './Header.module.scss';
 export const Header = () => {
   return (
     <header className={style.wrapper}>
-      <span className={style.wrapper_logo}>LOGO</span>
-      {
+      <img className={style.wrapper_logo} src=" /logo.png" />
+      <nav className={style.wrapper_nav}>
         <ul>
-          <li>
+          <p>
             <Link to={routes.main}>ГЛАВНАЯ</Link>
-          </li>
+          </p>
           <li>
             <Link to={routes.posts}>ПОСТЫ</Link>
           </li>
@@ -25,7 +25,7 @@ export const Header = () => {
             <Link to={routes.aboutUs}>О НАС</Link>
           </li>
         </ul>
-      }
+      </nav>
       <span className={style.wrapper_title}>APP_NAME</span>
     </header>
   );

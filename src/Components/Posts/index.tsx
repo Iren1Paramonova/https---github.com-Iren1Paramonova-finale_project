@@ -5,28 +5,28 @@ import style from './PostsList.module.scss';
 
 export const PostsList = () => {
   return (
-    <main className={style.wrapper}>
+    <main className={style.wrapperList}>
       <h1>Статьи про кошек</h1>
-      <div>
-        <p>
+      <ul>
+        <li>
           <Link to={routes.post1}>Для чего нам нужны кошки?</Link>
-        </p>
-        <p>
+        </li>
+        <li>
           <Link to={routes.post2}>Ночные хищники</Link>
-        </p>
-        <p>
+        </li>
+        <li>
           <Link to={routes.post3}>Язык жестов и поз кошки</Link>
-        </p>
-        <p>
+        </li>
+        <li>
           <Link to={routes.post4}>Как выбрать котенка</Link>
-        </p>
-        <p>
+        </li>
+        <li>
           <Link to={routes.post5}>Котенок в доме</Link>
-        </p>
-        <p>
+        </li>
+        <li>
           <Link to={routes.post6}>Лекарства для кошки</Link>
-        </p>
-      </div>
+        </li>
+      </ul>
       <Link to={routes.main}>go to main</Link>
     </main>
   );
