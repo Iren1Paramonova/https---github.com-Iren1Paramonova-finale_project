@@ -21,11 +21,13 @@
   }
 
   &_nav {
-    & > ul {
-      color: aqua;
-      list-style: none;
-      display: flex;
-      gap: 18px;
-    }
+    display: inline;
+  }
+
+  ul {
+    color: aqua;
+    list-style: none;
+
+    gap: 18px;
   }
 }

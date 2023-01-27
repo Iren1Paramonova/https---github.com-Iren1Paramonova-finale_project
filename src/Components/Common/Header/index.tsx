@@ -9,9 +9,9 @@ export const Header = () => {
       <img className={style.wrapper_logo} src=" /logo.png" />
       <nav className={style.wrapper_nav}>
         <ul>
-          <p>
+          <li>
             <Link to={routes.main}>ГЛАВНАЯ</Link>
-          </p>
+          </li>
           <li>
             <Link to={routes.posts}>ПОСТЫ</Link>
           </li>
@@ -26,7 +26,7 @@ export const Header = () => {
           </li>
         </ul>
       </nav>
-      <span className={style.wrapper_title}>APP_NAME</span>
+      <Link to={routes.auth}>Авторизация</Link>
     </header>
   );
 };

@@ -1,3 +1,4 @@
+import { ProductCard } from 'Components/ProductCard';
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import style from './Content.module.scss';
@@ -24,6 +25,9 @@ export const Content = () => {
         тем, как играет кошка, можно наблюдать часами. Делитесь своими впечатлениями, рассказами,
         размещайте фотографии своих любимцев.
       </p>
+      <div>
+        <ProductCard image={''} name={''} country={''} age={0} weight={0} life={0} />
+      </div>
       <button type="button" onClick={() => navigate(-1)}>
         go back
       </button>

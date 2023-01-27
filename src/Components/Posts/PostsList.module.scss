@@ -8,9 +8,9 @@
 
 ul {
   color: black;
-  list-style: none; //убрать точки у списка
+  list-style: none;
   display: flex;
-  flex-direction: column; //столбиком
-  align-items: center; //выравнивание по центру
+  flex-direction: column;
+  align-items: center;
   gap: 18px;
 }
