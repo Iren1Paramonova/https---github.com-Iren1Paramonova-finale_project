@@ -16,11 +16,29 @@ export const ProductCard = (props: ProductPropsType) => {
   return (
     <div className={style.card__image}>
       <img src={image} alt="Cat" />
-      <div className={style.content}>{name}</div>
-      <div className={style.content}>{country}</div>
-      <div className={style.content}>{age}</div>
-      <div className={style.content}>{weight}</div>
-      <div className={style.content}>{life}</div>
+      <div className={style.atribut_vid}>
+        <p>
+          <strong>Порода: </strong>
+          {name}
+        </p>
+      </div>
+      <div className={style.atribut_nevid}>{life}</div>
+      <p>
+        <strong>Страна происхождения: </strong>
+        {country}
+      </p>
+      <p>
+        <strong>СВремя зарождения породы: </strong>
+        {age}
+      </p>
+      <p>
+        <strong>Вес: </strong>
+        {weight}
+      </p>
+      <p>
+        <strong>Продолжительность жизни: </strong>
+        {life}
+      </p>
     </div>
   );
 };

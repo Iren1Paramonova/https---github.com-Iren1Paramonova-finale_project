@@ -1,25 +1,3 @@
-.card {
-  width: 225px;
-  min-height: 350px;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column; /* Размещаем элементы в колонку */
-  border-radius: 4px;
-  transition: 0.2s;
-  position: relative;
-}
-
-/* При наведении на карточку - меняем цвет тени */
-.card:hover {
-  box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
-}
-
-.card__top {
-  flex: 0 0 220px; /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
-  position: relative;
-  overflow: hidden; /* Скрываем, что выходит за пределы */
-}
-
 /* Контейнер для картинки */
 .card__image {
   display: block;
@@ -40,4 +18,13 @@
 /* При наведении - увеличиваем картинку */
 .card__image:hover > img {
   transform: scale(1.1);
+}
+
+ul {
+  color: black;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
 }
