@@ -1,4 +1,5 @@
 import { ProductCard } from 'Components/ProductCard';
+import { catsArr } from 'Helpers/Constants';
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import style from './Content.module.scss';
@@ -26,7 +27,8 @@ export const Content = () => {
         размещайте фотографии своих любимцев.
       </p>
       <div>
-        <ProductCard image={''} name={''} country={''} age={0} weight={0} life={0} />
+        {/* <ProductCard /> */}
+        {catsArr?.length > 0 && catsArr.map((cat) => <ProductCard key={cat.id} catData={cat} />)}
       </div>
       <button type="button" onClick={() => navigate(-1)}>
         go back
