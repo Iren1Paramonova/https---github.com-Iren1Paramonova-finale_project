@@ -22,11 +22,11 @@ export const ProductCard = (props: any) => {
         </li>
         <li>
           <strong>Вес: </strong>
-          {`${weight as number} кг`}
+          {`${weight as string} кг`}
         </li>
         <li>
           <strong>Продолжительность жизни: </strong>
-          {`${lifespan as number} лет`}
+          {`${lifespan as string} лет`}
         </li>
       </ul>
     </main>

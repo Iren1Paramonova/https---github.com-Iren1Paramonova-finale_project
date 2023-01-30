@@ -26,7 +26,7 @@ export const Content = () => {
         тем, как играет кошка, можно наблюдать часами. Делитесь своими впечатлениями, рассказами,
         размещайте фотографии своих любимцев.
       </p>
-      <div>
+      <div className={style.block_cat}>
         {/* <ProductCard /> */}
         {catsArr?.length > 0 && catsArr.map((cat) => <ProductCard key={cat.id} catData={cat} />)}
       </div>
