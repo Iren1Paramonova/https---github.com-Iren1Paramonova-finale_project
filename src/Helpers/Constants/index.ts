@@ -4,6 +4,8 @@ import bengal from '../../img/bengal.jpg';
 import birma from '../../img/birma.jpg';
 import kornish from '../../img/kornish.jpg';
 import mekong from '../../img/mekong.jpg';
+import nibelung from '../../img/nibelung.jpg';
+
 export const catsArr = [
   {
     id: 1,
@@ -51,12 +53,21 @@ export const catsArr = [
     lifespan: '14-16',
   },
   {
-    id: 5,
+    id: 6,
     img: mekong,
     breed: 'Меконгский бобтейл',
     country: 'Юго-Восточная Азия',
     timeOfBornBreed: 2004,
     weight: '3.6-4.5',
     lifespan: '15-18, иногда и 25',
+  },
+  {
+    id: 7,
+    img: nibelung,
+    breed: 'Нибелунг',
+    country: 'США',
+    timeOfBornBreed: 2004,
+    weight: 'кошки 3-5.5, коты 5-6',
+    lifespan: '14-20',
   },
 ];

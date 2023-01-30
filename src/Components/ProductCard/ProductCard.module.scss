@@ -1,6 +1,6 @@
 .card__image > img {
-  width: 50%;
-  height: 50%;
+  width: 100px;
+  height: 100px;
   object-fit: contain; /* Встраиваем картинку в контейнер card__image */
   transition: 0.2s;
 }
@@ -10,11 +10,11 @@
   transform: scale(1.1);
 }
 
-ul {
+.card__image > ul {
   color: black;
   list-style: none;
-  display: flex;
+  display: inline-block;
   flex-direction: column;
-  align-items: center;
+  align-items: baseline;
   gap: 18px;
 }
