@@ -20,14 +20,9 @@
     color: chocolate;
   }
 
-  &_nav {
-    display: inline;
-  }
-
-  ul {
-    color: aqua;
+  .mainNav {
     list-style: none;
-
+    display: flex;
     gap: 18px;
   }
 }

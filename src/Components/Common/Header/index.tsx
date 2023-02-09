@@ -1,3 +1,4 @@
+import { navigation } from 'Helpers/Constants';
 import { routes } from 'Helpers/Constants/routes';
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -7,25 +8,13 @@ export const Header = () => {
   return (
     <header className={style.wrapper}>
       <img className={style.wrapper_logo} src=" /logo.png" />
-      <nav className={style.wrapper_nav}>
-        <ul>
-          <li>
-            <Link to={routes.main}>ГЛАВНАЯ</Link>
-          </li>
-          <li>
-            <Link to={routes.posts}>ПОСТЫ</Link>
-          </li>
-          <li>
-            <Link to={routes.gallery}>ГАЛЕРЕЯ</Link>
-          </li>
-          <li>
-            <Link to={routes.video}>ВИДЕО</Link>
-          </li>
-          <li>
-            <Link to={routes.aboutUs}>О НАС</Link>
-          </li>
-        </ul>
-      </nav>
+      <div className={style.mainNav}>
+        {navigation.map((item) => (
+          <Link key={item.name} to={item.route}>
+            {item.name}
+          </Link>
+        ))}
+      </div>
       <Link to={routes.auth}>Авторизация</Link>
     </header>
   );

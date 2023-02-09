@@ -14,12 +14,18 @@ import Post4 from 'Containers/Posts/Post4';
 import Post5 from 'Containers/Posts/Post5';
 import Post6 from 'Containers/Posts/Post6';
 import { Auth } from 'Containers/AuthForm';
+import { PageWrapper } from 'Components/Common/PageWrapper';
+import { OnePost } from 'Containers/OnePost';
 
 function App() {
+   useEffect(() => {
+     console.log('App MOUNT');
+   }, []);
   return (
     <Routes>
-      <Route path={routes.main} element={<Main />} />
-      <Route path={routes.posts} element={<Posts />} />
+      <Route path={routes.main} element={<PageWrapper />}>
+        <Route index element={<Main />} />
+           <Route path={routes.posts} element={<Posts />} />
       <Route path={routes.aboutUs} element={<AboutUs />} />
       <Route path={routes.gallery} element={<Gallery />} />
       <Route path={routes.video} element={<Video />} />
@@ -31,6 +37,7 @@ function App() {
       <Route path={routes.post6} element={<Post6 />} />
       <Route path={routes.auth} element={<Auth />} />
       <Route path={routes.notFound} element={<NotFound />} />
+    </Routes>
     </Routes>
   );
 }

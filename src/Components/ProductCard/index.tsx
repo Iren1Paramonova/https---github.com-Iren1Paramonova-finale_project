@@ -34,23 +34,3 @@ export const ProductCard = (props: any) => {
     </main>
   );
 };
-const displayBox = () => {
-  const boxMouseOverHandler = (event: React.MouseEvent<HTMLDivElement>) => {
-    const box: HTMLDivElement = event.currentTarget;
-    box.style.backgroundColor = 'lightblue';
-  };
-  const boxMouseOutHandler = (event: React.MouseEvent<HTMLDivElement>) => {
-    const box: HTMLDivElement = event.currentTarget;
-    box.style.backgroundColor = 'lightgreen';
-  };
-  return (
-    <div style={styles.box} onMouseOver={boxMouseOverHandler} onMouseOut={boxMouseOutHandler}>
-      <input
-        onMouseOver={boxMouseOverHandler}
-        onMouseOut={boxMouseOutHandler}
-        style={styles.input}
-        placeholder="Welcome to KindaCode.com"
-      />
-    </div>
-  );
-};

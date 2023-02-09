@@ -13,7 +13,7 @@ export const GalleryList = ({ data }: TProps) => {
     <main className={style.wrapper}>
       <h1>Здесь красуются лучшие из лучших</h1>
       {data?.length === 0 ? (
-        <pre>Net cotikov</pre>
+        <pre>Идет загрузка котиков</pre>
       ) : (
         data.map((cat) => <img src={cat.url} alt="myu" key={cat.id} />)
       )}

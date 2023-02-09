@@ -5,6 +5,7 @@ import birma from '../../img/birma.jpg';
 import kornish from '../../img/kornish.jpg';
 import mekong from '../../img/mekong.jpg';
 import nibelung from '../../img/nibelung.jpg';
+import { routes } from './routes';
 
 export const catsArr = [
   {
@@ -69,5 +70,27 @@ export const catsArr = [
     timeOfBornBreed: 2004,
     weight: 'кошки 3-5.5, коты 5-6',
     lifespan: '14-20',
+  },
+];
+export const navigation = [
+  {
+    route: routes.main,
+    name: 'ГЛАВНАЯ',
+  },
+  {
+    route: routes.posts,
+    name: 'ПОСТЫ',
+  },
+  {
+    route: routes.gallery,
+    name: 'ГАЛЕРЕЯ',
+  },
+  {
+    route: routes.video,
+    name: 'ВИДЕО',
+  },
+  {
+    route: routes.aboutUs,
+    name: 'О НАС',
   },
 ];
