@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { PageWrapper } from 'Components/Common/PageWrapper';
 import { GalleryList } from 'Components/Gallery';
 import { TCat } from 'Helpers/types';
 import React, { useState, useEffect } from 'react';
@@ -19,9 +18,5 @@ export const Gallery = () => {
       clearInterval(timeout);
     };
   }, []);
-  return (
-    <PageWrapper>
-      <GalleryList data={data} />
-    </PageWrapper>
-  );
+  return <GalleryList data={data} />;
 };

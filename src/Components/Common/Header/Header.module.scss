@@ -13,16 +13,22 @@
 
   &_logo {
     font-size: 20px;
-    height: 56px;
+    height: 60px;
   }
 
   &_title {
     color: chocolate;
   }
 
-  .mainNav {
-    list-style: none;
-    display: flex;
-    gap: 18px;
+  &_nav {
+    & > ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      height: 5px;
+    }
+  }
+  .name {
+    color: #fff;
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { routes } from 'Helpers/Constants/routes';
 import { Link } from 'react-router-dom';
-import style from './Post4.module.scss';
+import style from './PostsList.module.scss';
 
 export const PostText4 = () => {
   return (
