@@ -11,13 +11,15 @@ type TProps = { data: TCat[] | [] };
 export const GalleryList = ({ data }: TProps) => {
   return (
     <main className={style.wrapper}>
-      <h1>Здесь красуются лучшие из лучших</h1>
-      {data?.length === 0 ? (
-        <pre>Идет загрузка котиков</pre>
-      ) : (
-        data.map((cat) => <img src={cat.url} alt="myu" key={cat.id} />)
-      )}
-      <Link to={routes.main}>go to main</Link>
+      <section className={style.block}>
+        <h1>Здесь красуются лучшие из лучших</h1>
+        {data?.length === 0 ? (
+          <pre>Идет загрузка котиков...</pre>
+        ) : (
+          data.map((cat) => <img src={cat.url} alt="myu" key={cat.id} />)
+        )}
+      </section>
+      <Link to={routes.main}>на главную</Link>
     </main>
   );
 };

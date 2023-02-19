@@ -27,7 +27,7 @@ export const PostsList = () => {
           <Link to={routes.post6}>Лекарства для кошки</Link>
         </li>
       </ul>
-      <Link to={routes.main}>go to main</Link>
+      <Link to={routes.main}>на главную</Link>
     </main>
   );
 };

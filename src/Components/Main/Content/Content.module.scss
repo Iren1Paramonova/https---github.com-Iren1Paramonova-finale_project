@@ -1,15 +1,15 @@
 .content {
-  padding: 20px;
-  margin: 20px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
+  background-color: #f6d55c;
 }
 
 .block_cat {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 }

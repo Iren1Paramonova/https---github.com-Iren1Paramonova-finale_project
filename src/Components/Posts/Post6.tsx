@@ -1,9 +1,10 @@
 import React from 'react';
 import { routes } from 'Helpers/Constants/routes';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import style from './PostsList.module.scss';
 
 export const PostText6 = () => {
+  const navigate = useNavigate();
   return (
     <main className={style.wrapper}>
       <h1>Лекарства для кошки</h1>
@@ -25,7 +26,15 @@ export const PostText6 = () => {
         Анальгин нельзя ни в коем случае! В обязательном порядке советуйтесь с врачом-ветеринаром!
         Не простите потом себе, если собственными руками дадите своему любимцу ядовитую таблетку…
       </p>
-      <Link to={routes.posts}>go to posts</Link>
+      <section className="style.post_nav">
+        <Link to={routes.posts}>go to posts</Link>
+        <button type="button" onClick={() => navigate(-1)}>
+          предыдущий пост
+        </button>
+        <button type="button" onClick={() => navigate(1)}>
+          следующий пост
+        </button>
+      </section>
     </main>
   );
 };

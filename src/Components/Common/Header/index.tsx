@@ -25,6 +25,12 @@ export const Header = () => {
             <Link to={routes.posts}>ПОСТЫ</Link>
           </li>
           <li>
+            <Link to={routes.gallery}>ГАЛЕРЕЯ</Link>
+          </li>
+          <li>
+            <Link to={routes.video}>ВИДЕО</Link>
+          </li>
+          <li>
             <Link to={routes.aboutUs}>О НАС</Link>
           </li>
         </ul>
@@ -38,7 +44,7 @@ export const Header = () => {
           </button>
         </div>
       ) : (
-        <Link to={routes.auth}>AUTH</Link>
+        <Link to={routes.auth}>РЕГИСТРАЦИЯ</Link>
       )}
     </header>
   );

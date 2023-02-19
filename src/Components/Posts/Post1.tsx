@@ -1,9 +1,10 @@
 import React from 'react';
 import { routes } from 'Helpers/Constants/routes';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import style from './PostsList.module.scss';
 
 export const PostText1 = () => {
+  const navigate = useNavigate();
   return (
     <main className={style.wrapper}>
       <h1>Для чего нам нужны кошки?</h1>
@@ -35,7 +36,15 @@ export const PostText1 = () => {
         считаю, что любить можно и нужно уметь хотя бы с малого, и пусть это будет кошка, собака,
         хомячок, птичка, не важно, главное - чтоб мы не разучились вообще - любить.
       </p>
-      <Link to={routes.posts}>go to posts</Link>
+      <section className="style.post_nav">
+        <button type="button" onClick={() => navigate(-1)}>
+          предыдущий пост
+        </button>
+        <Link to={routes.posts}>к списку постов</Link>
+        <button type="button" onClick={() => navigate(1)}>
+          следующий пост
+        </button>
+      </section>
     </main>
   );
 };

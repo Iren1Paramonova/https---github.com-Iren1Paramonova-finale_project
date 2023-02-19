@@ -1,9 +1,10 @@
 import React from 'react';
 import { routes } from 'Helpers/Constants/routes';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import style from './PostsList.module.scss';
 
 export const PostText4 = () => {
+  const navigate = useNavigate();
   return (
     <main className={style.wrapper}>
       <h1>Как выбрать котенка</h1>
@@ -153,6 +154,12 @@ export const PostText4 = () => {
         существо - КОШКА....
       </p>
       <Link to={routes.posts}>go to posts</Link>
+      <button type="button" onClick={() => navigate(-1)}>
+        предыдущий пост
+      </button>
+      <button type="button" onClick={() => navigate(1)}>
+        следующий пост
+      </button>
     </main>
   );
 };
