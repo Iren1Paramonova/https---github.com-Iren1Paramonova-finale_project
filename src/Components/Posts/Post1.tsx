@@ -37,11 +37,8 @@ export const PostText1 = () => {
         хомячок, птичка, не важно, главное - чтоб мы не разучились вообще - любить.
       </p>
       <section className="style.post_nav">
-        <button type="button" onClick={() => navigate(-1)}>
-          предыдущий пост
-        </button>
         <Link to={routes.posts}>к списку постов</Link>
-        <button type="button" onClick={() => navigate(1)}>
+        <button type="button" onClick={() => navigate(routes.post2)}>
           следующий пост
         </button>
       </section>

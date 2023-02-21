@@ -28,11 +28,8 @@ export const PostText6 = () => {
       </p>
       <section className="style.post_nav">
         <Link to={routes.posts}>go to posts</Link>
-        <button type="button" onClick={() => navigate(-1)}>
+        <button type="button" onClick={() => navigate(routes.post5)}>
           предыдущий пост
-        </button>
-        <button type="button" onClick={() => navigate(1)}>
-          следующий пост
         </button>
       </section>
     </main>

@@ -31,10 +31,10 @@ export const PostText5 = () => {
         я не одна, такая сумасшедшая?
       </p>
       <Link to={routes.posts}>go to posts</Link>
-      <button type="button" onClick={() => navigate(-1)}>
+      <button type="button" onClick={() => navigate(routes.post4)}>
         предыдущий пост
       </button>
-      <button type="button" onClick={() => navigate(1)}>
+      <button type="button" onClick={() => navigate(routes.post6)}>
         следующий пост
       </button>
     </main>

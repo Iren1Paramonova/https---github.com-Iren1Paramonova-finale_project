@@ -57,10 +57,10 @@ export const PostText3 = () => {
         получено.
       </p>
       <Link to={routes.posts}>go to posts</Link>
-      <button type="button" onClick={() => navigate(-1)}>
+      <button type="button" onClick={() => navigate(routes.post2)}>
         предыдущий пост
       </button>
-      <button type="button" onClick={() => navigate(1)}>
+      <button type="button" onClick={() => navigate(routes.post4)}>
         следующий пост
       </button>
     </main>

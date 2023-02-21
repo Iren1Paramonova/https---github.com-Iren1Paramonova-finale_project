@@ -154,10 +154,10 @@ export const PostText4 = () => {
         существо - КОШКА....
       </p>
       <Link to={routes.posts}>go to posts</Link>
-      <button type="button" onClick={() => navigate(-1)}>
+      <button type="button" onClick={() => navigate(routes.post3)}>
         предыдущий пост
       </button>
-      <button type="button" onClick={() => navigate(1)}>
+      <button type="button" onClick={() => navigate(routes.post5)}>
         следующий пост
       </button>
     </main>
