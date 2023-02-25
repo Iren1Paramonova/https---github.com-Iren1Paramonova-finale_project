@@ -86,10 +86,6 @@ export const navigation = [
     name: 'ГАЛЕРЕЯ',
   },
   {
-    route: routes.video,
-    name: 'ВИДЕО',
-  },
-  {
     route: routes.aboutUs,
     name: 'О НАС',
   },

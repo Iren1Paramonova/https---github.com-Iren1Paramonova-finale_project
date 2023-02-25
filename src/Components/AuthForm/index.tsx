@@ -34,6 +34,15 @@ export const AuthForm = () => {
     }
   };
 
+  /*   const mailHandler = () => {
+    if (formState.email.indexOf("@") != 0) {
+      setErrorMessage('введите почту');
+    } else {
+      setErrorMessage('');
+      dispatch(UserSliceActions.setUserLoading(true))
+    };
+  }; */
+
   useEffect(() => {
     if (formState.password.length < 5 && formState.password !== '') {
       setErrorMessage('пароль слишком короткий');

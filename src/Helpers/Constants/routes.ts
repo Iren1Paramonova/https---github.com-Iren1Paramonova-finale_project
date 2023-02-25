@@ -3,7 +3,6 @@ export const routes = {
   posts: '/posts',
   aboutUs: '/aboutUs',
   gallery: '/gallery',
-  video: '/video',
   post1: '/posts/post1',
   post2: '/posts/post2',
   post3: '/posts/post3',

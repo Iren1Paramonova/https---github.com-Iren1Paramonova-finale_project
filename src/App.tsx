@@ -5,7 +5,6 @@ import { Routes, Route } from 'react-router-dom';
 import { routes } from 'Helpers/Constants/routes';
 import { NotFound } from 'Containers/NotFounde';
 import { AboutUs } from 'Containers/AboutUs';
-import { Video } from 'Containers/Video';
 import { Gallery } from 'Containers/Gallery';
 import Post1 from 'Containers/Posts/Post1';
 import Post2 from 'Containers/Posts/Post2';
@@ -27,7 +26,6 @@ function App() {
         <Route path={routes.posts} element={<Posts />} />
         <Route path={routes.aboutUs} element={<AboutUs />} />
         <Route path={routes.gallery} element={<Gallery />} />
-        <Route path={routes.video} element={<Video />} />
         <Route path={routes.post1} element={<Post1 />} />
         <Route path={routes.post2} element={<Post2 />} />
         <Route path={routes.post3} element={<Post3 />} />
